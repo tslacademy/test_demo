@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="iconlogo.png" alt="Burger Hut">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- Add login link -->
+                <li class="login-link"><a href="#">Login</a></li>
+                <!-- Add profile, cart, and logout links -->
+                <li class="profile hidden"><a href="#">Profile</a></li>
+                <li class="cart hidden"><a href="#">Cart</a></li>
+                <li class="logout hidden"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Burger Hut</h1>
+                <p>Serving the Juiciest Burgers in Town</p>
+                <a href="#" class="cta-btn">Explore Our Menu</a>
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="burger1.jpg" alt="Burger">
+                    <h3>Classic Beef Burger</h3>
+                    <p>Our signature beef patty topped with lettuce, tomato, onion, and pickles. Served on a toasted sesame seed bun.</p>
+                    <span class="price">$8.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="burger2.jpg" alt="Burger">
+                    <h3>Grilled Chicken Burger</h3>
+                    <p>Grilled chicken breast topped with melted cheese, crispy lettuce, and creamy mayo. Served on a whole wheat bun.</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <!-- Add more menu items as needed -->
+            </div>
+        </div>
+    </section> 
+    <section class="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form action="#" method="POST" class="reservation-form">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><small>Format: 123-456-7890</small></td>
+                    </tr>
+                    <tr>
+                        <td><label for="booking-date">Booking Date:</label></td>
+                        <td><input type="date" id="booking-date" name="booking-date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="booking-time">Booking Time:</label></td>
+                        <td><input type="time" id="booking-time" name="booking-time" required></td>
+                    </tr>
+                </table>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+       <section class="reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <div class="reviewer">
+                    <img src="customer1.jpg" alt="Customer">
+                    <h3>John Doe</h3>
+                </div>
+                <p class="comment">"The burgers at Burger Hut are amazing! I've been a regular customer for years and I'm never disappointed."</p>
+            </div>
+            <div class="review">
+                <div class="reviewer">
+                    <img src="customer2.jpg" alt="Customer">
+                    <h3>Jane Smith</h3>
+                </div>
+                <p class="comment">"I love the variety of burgers offered at Burger Hut. The quality and taste are consistently excellent!"</p>
+            </div>
+            <!-- Add more reviews as needed -->
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallery1.jpg" alt="Interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery2.jpg" alt="Burger">
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery3.jpg" alt="Table">
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <p><strong>Name:</strong> Satya Toleti</p>
+                <p><strong>Email:</strong> lakshmitoleti12345@gmail.com</p>
+                <p><strong>Phone Number:</strong> 9059344229</p>
+                <p><strong>Address:</strong> Konasema District,</p>
+                <P>P. Gannavaram Mandal, K. Yenugupalli
+                   <p>  Kankadurga Temple Front Side</p>
+            </div>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+        <!-- Other sections of the webpage would go here -->
+</body>
+</html>

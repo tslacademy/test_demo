@@ -1,0 +1,336 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Noto Sans',sans-serif;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Change to desired hover color */
+}
+.hero {
+    background-image: url('burger-hut-hero-bg.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffd700; /* Change to desired button color */
+    color: #222; /* Change to desired button text color */
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ffcc00; /* Change to desired hover button color */
+}
+.menu {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.menu .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd700; /* Change to desired price color */
+}
+.reservation {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.reservation .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.reservation h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+}
+
+table tr td {
+    padding: 10px;
+}
+
+table tr td label {
+    font-size: 20px;
+}
+
+table tr td input[type="text"],
+table tr td input[type="email"],
+table tr td input[type="tel"],
+table tr td input[type="date"],
+table tr td input[type="time"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ffd700; /* Change to desired button color */
+    color: #222; /* Change to desired button text color */
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Change to desired hover button color */
+}
+.reviews {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.reviews .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reviews h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.review {
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviewer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reviewer h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.comment {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.gallery {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.gallery .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item:hover img {
+    opacity: 0.8;
+}
+.contact {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.contact .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.contact-details p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ffd700; /* Change to desired button color */
+    color: #222; /* Change to desired button text color */
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Change to desired hover button color */
+}
